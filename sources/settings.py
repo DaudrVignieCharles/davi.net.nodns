@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
+from sources.keys import devKey, userKey
+
 # Unique developer API key ; get it from https://pastebin.com/api#1
-devKey=""
+#devKey=""
 # User key ; get it from https://pastebin.com/api/api_user_key.html
-userKey=""
+#userKey=""
 # Paste name
 pasteName="styx_ipa"
 # Time to sleep, delay before reasking for IP adress ; time is in minute

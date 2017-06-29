@@ -7,12 +7,19 @@ from sources.libdaemon import log, getPublicIP
 from sources.settings import userKey, devKey, TTS, pasteName
 from sources.pastebinAPI import Api
 
-filespath = environ['HOME'] + "/.nodns"
-if not path.isdir(filespath) :
-    mkdir(filespath)
-logfile = filespath + "/log"
-pidfile = filespath + "/pid"
-urlfile = filespath + "/url"
+logfile = "/var/log/nodns.log"
+pidfile = "/run/davi.net.nodns/nodns.pid"
+urlfile = "/run/davi.net.nodns/nodns.url"
+
+if not path.isdir('/run/davi.net.nodns') :
+    log(logfile, 1, "No such directory : /run/davi.net.nodns/, creating it...")
+    mkdir('/run/davi.net.nodns/')
+if not devKey:
+    log(logfile, 2, "devKey not found, aborting execution of daemon... Exiting.")
+    exit(1)
+if not userKey:
+    log(logfile, 2, "userKey not found, aborting execution of daemon... Exiting.")
+    exit(1)
 
 otag = "\x1b[35;1m"
 ctag = "\x1b[0m"
@@ -43,6 +50,7 @@ try :
             public_ip_adress_ = public_ip_adress
             log(logfile, 0, """Sending our new public IP address to Pastebin...""")
             paste_url = api.paste(public_ip_adress, pasteName).text
+            if paste url
             with open(urlfile, 'w') as file :
                 file.write(paste_url+"\n")
             log(logfile, 0, """paste URL is : {0}""".format(otag+paste_url+ctag))
@@ -51,9 +59,4 @@ try :
 finally :
     api.delete(paste_url.split(sep="/")[-1])
     log(logfile, 0, "Exiting, old paste deleted.")
-    
-    
-
-    
-
 

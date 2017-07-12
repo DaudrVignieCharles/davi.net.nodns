@@ -16,13 +16,13 @@ $> pip3 install scapy-python3.""")
 from time import strftime
 
 class Killer:
-  kill_now = False
-  def __init__(self):
-    signal.signal(signal.SIGINT, self.exit_gracefully)
-    signal.signal(signal.SIGTERM, self.exit_gracefully)
+    kill_now = False
+    def __init__(self):
+        signal.signal(signal.SIGINT, self.exit_gracefully)
+        signal.signal(signal.SIGTERM, self.exit_gracefully)
 
-  def exit_gracefully(self,signum, frame):
-    self.kill_now = True
+    def exit_gracefully(self,signum, frame):
+        self.kill_now = True
 
 
 def log(logFile, level, text):

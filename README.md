@@ -4,7 +4,7 @@
 - [Français](#fonctionnement)
 
 
-### Operation :
+### Operation
 
 This daemon is for those who want to communicate with a computer that has only a dynamic public IP address. Start by running the daemon on the server. Here's what he'll do:
 
@@ -15,7 +15,7 @@ This daemon is for those who want to communicate with a computer that has only a
 
 All you have to do is retrieve the public IP address of the server either by using the Pastebin API or by going directly to Pastebin with your web browser.
 
-### Configuration file :
+### Configuration file
 
 **/sources/settings.py** :
 
@@ -28,7 +28,7 @@ All you have to do is retrieve the public IP address of the server either by usi
 
 ***
 
-### Fonctionnement :
+### Fonctionnement
 
 Ce démon est destiné à ceux qui veulent communiquer avec un ordinateur ne disposant que d'une adresse IP publique dynamique. Commencez par lancer le démon sur le serveur. Voici ce qu'il va faire :
 
@@ -39,7 +39,7 @@ Ce démon est destiné à ceux qui veulent communiquer avec un ordinateur ne dis
 
 Il ne vous reste plus qu'a récupérer l'adresse IP publique du serveur soit en utilisant l'API de Pastebin soit en vous rendant directement sur Pastebin avec votre navigateur Web.
 
-### Fichier de configuration :
+### Fichier de configuration
 
 **/sources/settings.py** :
 

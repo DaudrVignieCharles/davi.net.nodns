@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 
-# Unique developer API key ; get it from https://pastebin.com/api#1
+# TYPE : STR : Unique developer API key ; get it from https://pastebin.com/api#1
 devKey=""
-# User key ; get it from https://pastebin.com/api/api_user_key.html
+# TYPE : STR : User key ; get it from https://pastebin.com/api/api_user_key.html
 userKey=""
-# Paste name
+# TYPE : STR : Paste name
 pasteName=""
-# Time to sleep, delay before reasking for IP adress ; time is in minute
+# TYPE : INT : Time to sleep, delay before reasking for IP adress ; time is in minute
 TTS=15

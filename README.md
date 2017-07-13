@@ -19,12 +19,12 @@ All you have to do is retrieve the public IP address of the server either by usi
 
 **/sources/settings.py** :
 
-|      Name      |      Type       |    Value  |
-| ---------------- |: -------------: | ---------: |
-| devKey          |    String      |      Your unique developer API key, get it from https://pastebin.com/api#1 |
-| userKey         |    String      |      User key, get it from https://pastebin.com/api/api_user_key.html |
-| pasteName   |    String      | The name that your post will have on pastebin. |
-| TTS                |    Integer    |      Time to sleep, delay before reasking for public IP adress ; time is in minute |
+    |    Name    |   Type    |                                    Value                                           |
+    | ---------- | ----------| ---------------------------------------------------------------------------------- |
+    | devKey     |  String   |  Your unique developer API key, get it from https://pastebin.com/api#1             |
+    | userKey    |  String   |  User key, get it from https://pastebin.com/api/api_user_key.html                  |
+    | pasteName  |  String   |  The name that your post will have on pastebin.                                    |
+    | TTS        |  Integer  |  Time to sleep, delay before reasking for public IP adress ; time is in minute     |
 
 ***
 
@@ -43,9 +43,9 @@ Il ne vous reste plus qu'a récupérer l'adresse IP publique du serveur soit en 
 
 **/sources/settings.py** :
 
-|      Nom      |      Type       |    Valeur  |
-| ---------------- |: -------------: | ---------: |
-| devKey          |    Chaîne de caractère      |      Votre clef unique pour l'API developpeur, trouvez la sur  https://pastebin.com/api#1 |
-| userKey         |    Chaîne de caractère      |      Clé utilisateur, trouvez la sur https://pastebin.com/api/api_user_key.html |
-| pasteName   |    Chaîne de caractère      | Le nom qu'aura votre post sur Pastebin |
-| TTS                |    Entier    | Délai avant de retester l'adresse IP publique; Le temps est en minute |
+    |    Nom     |         Type          |                                        Valeur                                         |
+    | ---------- | ----------------------| ------------------------------------------------------------------------------------- |
+    | devKey     |  Chaîne de caractère  |  Votre clef unique pour l'API developpeur, trouvez la sur  https://pastebin.com/api#1 |
+    | userKey    |  Chaîne de caractère  |  Clé utilisateur, trouvez la sur https://pastebin.com/api/api_user_key.html           |
+    | pasteName  |  Chaîne de caractère  |  Le nom qu'aura votre post sur Pastebin                                               |
+    | TTS        |  Entier               |  Délai avant de retester l'adresse IP publique; Le temps est en minute                |

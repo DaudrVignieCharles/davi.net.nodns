@@ -7,7 +7,11 @@ from xml.etree import ElementTree
 from sources.pastebinAPI import Api
 from sources.settings_ import devKey, userKey
 
-pasteName = argv[1]
+try:
+    pasteName = argv[1]
+except IndexError:
+    print("You must specify paste name as argument.")
+    exit(1)
 
 api = Api(devKey, userKey)
 

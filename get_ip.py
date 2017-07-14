@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 # -*-coding:UTF8 -*
 
+from sys import argv
 from xml.etree import ElementTree
 
 from sources.pastebinAPI import Api
-from sources.settings_ import devKey, userKey, pasteName
+from sources.settings_ import devKey, userKey
+
+pasteName = argv[1]
 
 api = Api(devKey, userKey)
 

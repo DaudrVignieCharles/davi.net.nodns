@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# -*-coding:UTF8 -*
 
 # TYPE : STR : Unique developer API key ; get it from https://pastebin.com/api#1
 devKey=""

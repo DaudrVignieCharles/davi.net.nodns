@@ -35,9 +35,9 @@ Ce démon est destiné à ceux qui veulent communiquer avec un ordinateur ne dis
 - Effectuer une requète DNS à OpenDNS demandant l'adresse de "myip.opendns.com".
 - OpenDNS va renvoyer l'adresse IP publique du serveur.
 - Cette adresse IP publique sera envoyé à Pastebin en utilisant leur API.
-- Le démon demandera régulièrement l'adresse IP publique et l'enverra à Pastebin si elle à changée depuis la dernière fois.
+- Le démon demandera régulièrement l'adresse IP publique et l'enverra à Pastebin si elle a changée depuis la dernière fois.
 
-Il ne vous reste plus qu'a récupérer l'adresse IP publique du serveur soit en utilisant l'API de Pastebin soit en vous rendant directement sur Pastebin avec votre navigateur Web.
+Il ne vous reste plus qu'à récupérer l'adresse IP publique du serveur soit en utilisant l'API de Pastebin soit en vous rendant directement sur Pastebin avec votre navigateur Web.
 
 ### Fichier de configuration
 
